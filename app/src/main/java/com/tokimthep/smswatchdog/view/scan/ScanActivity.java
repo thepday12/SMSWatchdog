@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.CompoundButton;
 import android.widget.TextView;
 
@@ -13,7 +14,7 @@ import com.tokimthep.smswatchdog.R;
 import com.tokimthep.smswatchdog.view.ocrreader.OcrCaptureActivity;
 
 public class ScanActivity extends AppCompatActivity {
-
+//https://codelabs.developers.google.com/codelabs/mobile-vision-ocr/#7
     private CompoundButton autoFocus;
     private CompoundButton useFlash;
     private TextView statusMessage;
@@ -25,6 +26,8 @@ public class ScanActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_scan);
 
         statusMessage = (TextView)findViewById(R.id.status_message);

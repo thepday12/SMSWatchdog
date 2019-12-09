@@ -1,15 +1,22 @@
 <resources>
-    <string name="app_name">SmsWatchDog</string>
+    <string name="app_name">WatchDog</string>
     <string name="ok">OK</string>
     <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
     <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
     <string name="low_storage_error">Ocr dependencies cannot be downloaded due to low device storage</string>
     <string name="title_activity_main">Ocr Detector Sample</string>
-    <string name="ocr_header">Click &quot;Detect Text&quot; to detect text</string>
-    <string name="read_text">Detect Text</string>
-    <string name="auto_focus">Auto Focus</string>
-    <string name="use_flash">Use Flash</string>
+    <string name="ocr_header">Bấm vào khung để chọn đoạn văn bản nội dung</string>
+    <string name="read_text">Bắt đầu</string>
+    <string name="auto_focus">Tự động Focus</string>
+    <string name="use_flash">Bật Flash</string>
     <string name="ocr_success">Text read successfully</string>
     <string name="ocr_failure">No text captured</string>
     <string name="ocr_error">"Error reading text: %1$s"</string>
+
+    <string name="description_splash">Ứng dụng được xây dựng nhằm mục đích hỗ trợ, nâng cao chất lượng học tập cho học sinh cấp 1. Việc áp đặt vào sản phẩm có thể hạn chế khả năng tư duy của các trẻ.\n\nCha, mẹ không nên quá coi trọng tính chính xác của kết quả của bài tập mà cần xem xét cách tư duy của trẻ cho bài tập đó.</string>
+    <string name="button_continue">Tiếp tục</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
