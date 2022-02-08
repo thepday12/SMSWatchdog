@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:orientation="vertical"
+    android:background="#42a5f5"
+    tools:context=".activity.ResendActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="16dp"
+        android:paddingBottom="32dp"
+        android:background="@color/button_resend"
+        android:layout_height="wrap_content" android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+    <EditText
+        android:id="@+id/etFromDate"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:hint="@string/from_date_hint"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/etEndDate"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:layout_marginTop="8dp"
+        android:focusableInTouchMode="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/end_date_hint"
+        android:textColor="@android:color/white"
+        android:inputType="date" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btGetSMS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:background="#5c6bc0"
+            android:layout_gravity="center_vertical"
+            android:text="@string/button_get_sms"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#7e57c2"
+        />
+
+    <LinearLayout
+      android:padding="16dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#5c6bc0"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnResend"
+            android:background="#42a5f5"
+            android:text="@string/resend_button">
+
+        </Button>
+        <TextView
+            android:id="@+id/tvCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="16dp"
+        android:id="@+id/rvListMessage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>

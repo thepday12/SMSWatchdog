@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Bank SMS App</string>
+
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="status_connected">Đang hoạt động</string>
+    <string name="status_disconnected">Mất kết nối</string>
+    <string name="reload_button">Tải lại</string>
+    <string name="resend_button">Gửi lại</string>
+    <string name="resend_activity">Gửi lại</string>
+    <string name="from_date_hint">Ngày bắt đầu</string>
+    <string name="end_date_hint">Ngày kết thúc</string>
+    <string name="button_get_sms">Lấy danh sách</string>
+
+
+</resources>
